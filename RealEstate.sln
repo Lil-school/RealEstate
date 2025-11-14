@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36603.0 d17.14
+VisualStudioVersion = 17.14.36603.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealEstate.Lib", "RealEstate.Lib\RealEstate.Lib.csproj", "{4CDF3946-C035-403C-95BF-073A8A322183}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealEstate.Lib.UnitTests", "RealEstate.Lib.UnitTests\RealEstate.Lib.UnitTests.csproj", "{89AA677C-99A3-4D95-8F0E-F34D25A4677B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{4CDF3946-C035-403C-95BF-073A8A322183}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4CDF3946-C035-403C-95BF-073A8A322183}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4CDF3946-C035-403C-95BF-073A8A322183}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89AA677C-99A3-4D95-8F0E-F34D25A4677B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89AA677C-99A3-4D95-8F0E-F34D25A4677B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89AA677C-99A3-4D95-8F0E-F34D25A4677B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89AA677C-99A3-4D95-8F0E-F34D25A4677B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

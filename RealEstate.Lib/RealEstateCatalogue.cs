@@ -31,9 +31,29 @@ namespace RealEstate.Lib
         {
             _sales.Add(sale);
         }
-        public IList<ISale> GetSales()
+        public IList<ISale> GetAvailableSales()
         {
-            return _sales;
+            IList<ISale> availableSales = new List<ISale>();
+            foreach (var sale in _sales)
+            {
+                if(sale.IsAvailable())
+                {
+                    availableSales.Add(sale);
+                }
+            }
+            return availableSales;
+        }
+        public IList<ISale> GetAvailableSales(DateTime dateTime)
+        {
+            IList<ISale> availableSales = new List<ISale>();
+            foreach (var sale in _sales)
+            {
+                if (sale.IsAvailable(dateTime))
+                {
+                    availableSales.Add(sale);
+                }
+            }
+            return availableSales;
         }
 
     }
