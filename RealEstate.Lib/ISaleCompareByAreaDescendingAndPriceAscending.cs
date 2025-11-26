@@ -9,9 +9,9 @@ namespace RealEstate.Lib
 {
     internal class ISaleCompareByAreaDescendingAndPriceAscending : IComparer<ISale>
     {
-        public int Compare(ISale firstSale, ISale secondSale)
+        public int Compare(ISale firstSale, ISale secondSale)   // -1= secondSale ist kleiner 1= SecondSale ist bigger CompareTo immer descending sortiert
         {
-            int result = firstSale.LivingArea.CompareTo(secondSale.LivingArea);
+            int result = secondSale.LivingArea.CompareTo(firstSale.LivingArea);     // ascending
             if (result == 0) 
             {
                 return firstSale.Price.CompareTo(secondSale.LivingArea);

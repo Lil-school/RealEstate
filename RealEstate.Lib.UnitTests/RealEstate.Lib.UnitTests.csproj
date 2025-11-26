@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="ISaleCompareByAreaDescendingAndPriceAscendingTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ISaleCompareByAvailDateAscendingTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

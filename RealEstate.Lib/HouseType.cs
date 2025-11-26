@@ -8,7 +8,7 @@ namespace RealEstate.Lib
 {
     enum HouseType
     {
-        Detaiched,
+        Detached,
         SemiDetached,
         Row,
     }

@@ -8,7 +8,7 @@ using System.Web;
 
 namespace RealEstate.Lib
 {
-    internal abstract class AbstractSale : ISale
+    internal abstract class AbstractSale : ISale, IComparable<ISale>
     {
         int _buyingPrice;
         int _fee;
@@ -32,10 +32,11 @@ namespace RealEstate.Lib
         abstract public string GetInfo(bool detailed);
         public int CompareTo(ISale sale)    
         {
-            int result = this.AvailDate.CompareTo(sale.AvailDate);
-            if(result == 0) { result=this.Price.CompareTo(sale.Price); }
+            int result = AvailDate.CompareTo(sale.AvailDate);
+            if(result == 0) { result=Price.CompareTo(sale.Price); }
             return result;
         }
+       
         public bool IsAvailable()
         {
             if (!_isSold && DateTime.Now >= AvailDate)
