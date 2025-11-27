@@ -32,8 +32,8 @@ namespace RealEstate.Lib
         abstract public string GetInfo(bool detailed);
         public int CompareTo(ISale sale)    
         {
-            int result = AvailDate.CompareTo(sale.AvailDate);
-            if(result == 0) { result=Price.CompareTo(sale.Price); }
+            int result = this.AvailDate.CompareTo(sale.AvailDate);      //ascending
+            if(result == 0) { result=sale.Price.CompareTo(Price); }     //descending
             return result;
         }
        

@@ -6,14 +6,15 @@ using System.Threading.Tasks;
 
 namespace RealEstate.Lib
 {
-    public interface ISale
+    public interface ISale : IComparable<ISale>
     {
         DateTime AvailDate { get; }
-        int LivingArea { get; }
         int Price { get; }
-        string GetInfo(bool detailed);
+        int LivingArea { get; }
         bool IsAvailable();
         bool IsAvailable(DateTime date);
-
+        string GetInfo(bool detailed);
+        // Explicitly declare to make contract clear (optional because of IComparable<ISale>)
+        new int CompareTo(ISale other);
     }
 }

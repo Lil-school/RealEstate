@@ -11,10 +11,10 @@ namespace RealEstate.Lib
     {
         public int Compare(ISale firstSale, ISale secondSale)   // -1= secondSale ist kleiner 1= SecondSale ist bigger CompareTo immer descending sortiert
         {
-            int result = secondSale.LivingArea.CompareTo(firstSale.LivingArea);     // ascending
+            int result = secondSale.LivingArea.CompareTo(firstSale.LivingArea);     // descending
             if (result == 0) 
             {
-                return firstSale.Price.CompareTo(secondSale.LivingArea);
+                return firstSale.Price.CompareTo(secondSale.Price);            // ascending
             }
             return result;
         }

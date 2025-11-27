@@ -10,7 +10,7 @@ namespace RealEstate.Lib
     {
         public int Compare(ISale firstSale, ISale secondSale)
         {
-            int result = firstSale.AvailDate.CompareTo(secondSale.AvailDate);
+            int result = firstSale.AvailDate.CompareTo(secondSale.AvailDate); //ascending
             return result;
         }
     }

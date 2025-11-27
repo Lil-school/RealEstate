@@ -49,6 +49,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbstractSaleTests.cs" />
     <Compile Include="ISaleCompareByAreaDescendingAndPriceAscendingTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ISaleCompareByAvailDateAscendingTests.cs" />
